@@ -1,0 +1,228 @@
+/* default props describe the general design of component */
+.apollo-component-library-button {
+    border: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: filter 300ms;
+}
+
+.apollo-component-library-button:hover {
+    filter: brightness(90%);
+}
+
+.apollo-component-library-button:active {
+    filter: brightness(75%);
+}
+
+/* variants should be defined as followed */
+.apollo-component-library-button.default {
+    background: #ff5757;
+}
+
+.apollo-component-library-button.secondary {
+    background: #57aeff
+}
+.apollo-component-library-text-input {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding:  5px 10px;
+    border-radius: 5px;
+}
+
+.apollo-component-library-text-input.default {
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 0px 0px red;
+    transition: box-shadow 200ms;
+}
+
+.apollo-component-library-text-input.default:focus {
+    box-shadow: 0px 2px 0px 0px red;
+}
+
+.apollo-component-library-text-input.secondary {
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 0px 0px lightblue;
+    transition: box-shadow 200ms;
+}
+
+.apollo-component-library-text-input.secondary:focus {
+    box-shadow: 0px 2px 0px 0px lightblue;
+}
+.apollo-component-library-typography-component {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+.apollo-component-library-typography-component.first-header {
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.apollo-component-library-typography-component.second-header {
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.apollo-component-library-typography-component.third-header {
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.apollo-component-library-typography-component.no-margins {
+    margin: 0;
+}
+
+.apollo-component-library-typography-component.inline {
+    display: inline-block;
+}
+
+.apollo-component-library-typography-component.bold {
+    font-weight: bold;
+}
+
+.apollo-component-library-typography-component.italic {
+    font-style: italic;
+}
+
+.apollo-component-library-typography-component.underline {
+    text-decoration: underline;
+}
+.apollo-component-library-checkbox-component {
+    margin-right: 5px;
+}
+.apollo-component-library-radio-component {
+    margin-right: 5px;
+}
+.apollo-component-library-switch-component-label {
+    position: relative;
+    display: inline-block;
+    padding-left: 36px;
+}
+
+.apollo-component-library-switch-component-input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.apollo-component-library-switch-component {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    left: 5px;
+    background-color: rgb(226, 226, 226);
+    transition: 400ms;
+    width: 36px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.apollo-component-library-switch-component:before {
+    content: " ";
+    position: absolute;
+    min-height: 16px;
+    min-width: 16px;
+    left: 2px;
+    bottom: 2px;
+    background: white;
+    transition: 400ms;
+    border-radius: 100px;
+}
+
+.apollo-component-library-switch-component-input:checked + .apollo-component-library-switch-component:before {
+    transform: translate(16px);
+}
+
+.apollo-component-library-switch-component-input:checked + .apollo-component-library-switch-component.default:before {
+    background: lightcoral;
+}
+
+.apollo-component-library-switch-component-input:checked + .apollo-component-library-switch-component.secondary:before {
+    background: lightskyblue;
+}
+
+.apollo-component-library-switch-component-input:disabled + .apollo-component-library-switch-component:before {
+    background: darkgray;
+}
+
+.apollo-component-library-switch-component-input:disabled + .apollo-component-library-switch-component.default:before {
+    background: darkgray;
+}
+
+.apollo-component-library-switch-component-input:disabled + .apollo-component-library-switch-component.secondary:before {
+    background: darkgray;
+}
+/* default props describe the general design of component */
+.apollo-component-library-button {
+    border: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: filter 300ms;
+}
+
+.apollo-component-library-button:hover {
+    filter: brightness(90%);
+}
+
+.apollo-component-library-button:active {
+    filter: brightness(75%);
+}
+
+/* variants should be defined as followed */
+.apollo-component-library-button.default {
+    background: #ff5757;
+}
+
+.apollo-component-library-button.secondary {
+    background: #57aeff
+}
+
+
+
+
+
+
+
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background: white;
+    width: 80%;
+    height: auto;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .display-block {
+    display: block;
+  }
+  
+  .display-none {
+    display: none;
+  }
